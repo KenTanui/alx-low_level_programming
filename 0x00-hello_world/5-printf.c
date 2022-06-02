@@ -1,5 +1,4 @@
-include <stdio.h>
-
+#include <stdio.h>
 /**
  * main - my entry point
  * Description: print with proper grammar, but the outcome is a piece of art,
