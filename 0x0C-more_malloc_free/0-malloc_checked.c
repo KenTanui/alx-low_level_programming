@@ -1,5 +1,3 @@
-s (20 sloc)  324 Bytes
-
 #include "main.h"
 /**
  * malloc_checked - Function
