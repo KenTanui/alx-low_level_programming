@@ -1,15 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Entry point
- *
- * Description: prints opcode of main function
- *
- * @argv: pointer parameter, arguments passed
- * @argc: parameter of type int, number of arguments
- *
- * Return: returns 1 and 2 if fail and 0 on success
+ * main - function which prints opcode of the main function
+ * @argc: arguments' length
+ * @argv: contains arguments
+ * Return: 0
  */
-int main (int argc, char *argv[])
+
+int main(int argc, char **argv)
+
 {
+	int i;
+		if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+	if (atoi(argv[1]) < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	while (i < atoi(argv[1]) - 1)
+	{
+		printf("%02hhx ", ((char *) main)[i]);
+		i++;
+	}
+	printf("%02hhx\n", ((char *) main)[i]);
+	return (0);
 }
